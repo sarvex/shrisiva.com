@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@modular-forms/qwik':
     specifier: 0.20.0
-    version: 0.20.0(@builder.io/qwik-city@1.2.6)(@builder.io/qwik@1.2.6)
+    version: 0.20.0(@builder.io/qwik-city@1.2.7)(@builder.io/qwik@1.2.6)
   '@qwikest/icons':
     specifier: 0.0.8
     version: 0.0.8(@builder.io/qwik@1.2.6)
@@ -26,8 +26,8 @@ devDependencies:
     specifier: 1.2.6
     version: 1.2.6(undici@5.23.0)
   '@builder.io/qwik-city':
-    specifier: 1.2.6
-    version: 1.2.6
+    specifier: 1.2.7
+    version: 1.2.7
   '@playwright/test':
     specifier: 1.37.0
     version: 1.37.0
@@ -1530,15 +1530,15 @@ packages:
     hasBin: true
     dev: true
 
-  /@builder.io/qwik-city@1.2.6:
-    resolution: {integrity: sha512-/uo58NysxpdsiEwuuKo8HDM9UYYAofrniupor2v5vci3Dr6PTXcvKAFJ1Z+SdJGv2uxr5hvKsbVohnVYa9jxYg==}
+  /@builder.io/qwik-city@1.2.7:
+    resolution: {integrity: sha512-L5zykrLcvQ8wo2UO9SBIw3R7f07Mp3S5YHoEWir/9s4kJfrunyyyjEXwqhWbUo7GqPZL+o3R6fi5iXuc2Fg4rQ==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     dependencies:
       '@mdx-js/mdx': 2.3.0
       '@types/mdx': 2.0.5
       source-map: 0.7.4
       svgo: 3.0.2
-      vfile: 5.3.7
+      vfile: 6.0.1
       vite-imagetools: 5.0.5
       zod: 3.21.4
     transitivePeerDependencies:
@@ -2295,14 +2295,14 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@modular-forms/qwik@0.20.0(@builder.io/qwik-city@1.2.6)(@builder.io/qwik@1.2.6):
+  /@modular-forms/qwik@0.20.0(@builder.io/qwik-city@1.2.7)(@builder.io/qwik@1.2.6):
     resolution: {integrity: sha512-B58W9ksTQtVrXefbMMrmafQXFR7ZisxxB326/57WtNtiZLZ9omAXKE+8dyWmDVYcG3XqzqgVps8LD5hxqVBvpg==}
     peerDependencies:
       '@builder.io/qwik': ^1.2.4
       '@builder.io/qwik-city': ^1.2.4
     dependencies:
       '@builder.io/qwik': 1.2.6(undici@5.23.0)
-      '@builder.io/qwik-city': 1.2.6
+      '@builder.io/qwik-city': 1.2.7
     dev: false
 
   /@ndelangen/get-tarball@3.0.9:
@@ -9725,7 +9725,7 @@ packages:
       magic-string: 0.30.1
       react-docgen-typescript: 2.2.2(typescript@5.1.6)
     optionalDependencies:
-      '@builder.io/qwik-city': 1.2.6
+      '@builder.io/qwik-city': 1.2.7
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -10363,6 +10363,11 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
 
+  /unist-util-stringify-position@4.0.0:
+    resolution: {integrity: sha512-0ASV06AAoKCDkS2+xw5RXJywruurpbC4JZSm7nr7MOt1ojAzvyyaO+UxZf18j8FCF6kmzCZKcAgN/yu2gm2XgQ==}
+    dependencies:
+      '@types/unist': 3.0.0
+
   /unist-util-visit-parents@3.1.1:
     resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
     dependencies:
@@ -10560,6 +10565,12 @@ packages:
       '@types/unist': 2.0.6
       unist-util-stringify-position: 3.0.3
 
+  /vfile-message@4.0.2:
+    resolution: {integrity: sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-stringify-position: 4.0.0
+
   /vfile@5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
     dependencies:
@@ -10567,6 +10578,13 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
+
+  /vfile@6.0.1:
+    resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-stringify-position: 4.0.0
+      vfile-message: 4.0.2
 
   /vite-imagetools@5.0.5:
     resolution: {integrity: sha512-q+BRot2b7AxUHgkQzU+5ku+NERVZcXmLdAnQWSnIw31bRoPIBSDxmDRTDldX8gqyjQNkIBjObF+xqPCeNp7CzQ==}
